@@ -9,7 +9,7 @@ Example of list
 <form method = "post" action = "names">
 	<% class_size.to_i.times do %>
 
-		<input type = "text" autofocus="autofocus" name = "user_names[]">
+		<input type = "text" autofocus="autofocus" name = "user_names[]".capitalize>
 	<% end %>
 	<input type = "submit">
 </form>
