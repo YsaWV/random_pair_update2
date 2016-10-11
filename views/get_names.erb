@@ -4,11 +4,17 @@ This is a random paring app. It will take a list of names seperated by a "," and
 <br>
 Enter your list of names below. Then click submit.<br>
 <br>
-Example of list entry: John, Mark, Adam...
+Example of list 
 
 <form method = "post" action = "names">
-	<input type = "text" autofocus="autofocus" name = "user_names">
+	<% class_size.to_i.times do %>
+
+		<input type = "text" autofocus="autofocus" name = "user_names[]">
+	<% end %>
 	<input type = "submit">
 </form>
+
+
+
 
 lyle, jacob, jeremy, ysabele, lotfi, cyndi, don, stephanie, susan, adam, mike, maxx, john
